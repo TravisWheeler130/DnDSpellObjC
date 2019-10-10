@@ -13,6 +13,8 @@
 		19666C41234FB75300C4849D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19666C40234FB75300C4849D /* Assets.xcassets */; };
 		19666C44234FB75300C4849D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19666C42234FB75300C4849D /* LaunchScreen.storyboard */; };
 		19666C47234FB75300C4849D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19666C46234FB75300C4849D /* main.m */; };
+		19666C55234FC70D00C4849D /* TRWSpells.m in Sources */ = {isa = PBXBuildFile; fileRef = 19666C54234FC70D00C4849D /* TRWSpells.m */; };
+		19666C58234FD7FE00C4849D /* TRWSpellsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19666C57234FD7FE00C4849D /* TRWSpellsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		19666C43234FB75300C4849D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19666C45234FB75300C4849D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19666C46234FB75300C4849D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19666C53234FC70D00C4849D /* TRWSpells.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRWSpells.h; sourceTree = "<group>"; };
+		19666C54234FC70D00C4849D /* TRWSpells.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRWSpells.m; sourceTree = "<group>"; };
+		19666C56234FD7FE00C4849D /* TRWSpellsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRWSpellsController.h; sourceTree = "<group>"; };
+		19666C57234FD7FE00C4849D /* TRWSpellsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRWSpellsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,8 @@
 		19666C4F234FB7AC00C4849D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				19666C53234FC70D00C4849D /* TRWSpells.h */,
+				19666C54234FC70D00C4849D /* TRWSpells.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,6 +116,8 @@
 		19666C51234FB7BC00C4849D /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				19666C56234FD7FE00C4849D /* TRWSpellsController.h */,
+				19666C57234FD7FE00C4849D /* TRWSpellsController.m */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -145,6 +155,7 @@
 		19666C29234FB75200C4849D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TRW;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Travis Wheeler";
 				TargetAttributes = {
@@ -191,7 +202,9 @@
 			files = (
 				19666C36234FB75200C4849D /* AppDelegate.m in Sources */,
 				19666C47234FB75300C4849D /* main.m in Sources */,
+				19666C55234FC70D00C4849D /* TRWSpells.m in Sources */,
 				19666C39234FB75200C4849D /* SceneDelegate.m in Sources */,
+				19666C58234FD7FE00C4849D /* TRWSpellsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9VU68T7UJ;
-				INFOPLIST_FILE = DNDSpell/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DNDSpell/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,7 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9VU68T7UJ;
-				INFOPLIST_FILE = DNDSpell/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DNDSpell/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
